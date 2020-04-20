@@ -15,6 +15,21 @@ namespace AppointmentRegistration
         }
     }
 
+    public partial class Doctor
+    {
+
+    }
+
+    public partial class Nurse
+    {
+
+    }
+
+    public partial class Appointment
+    {
+
+    }
+
     public partial class Schedule
     {
         public string resultsString => $"{appointmentId} {Patient.Name} {Doctor.name} {Nurse.name}";
