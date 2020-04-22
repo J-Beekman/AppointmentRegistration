@@ -70,7 +70,7 @@
             // addressSearchLabel
             // 
             this.addressSearchLabel.AutoSize = true;
-            this.addressSearchLabel.Location = new System.Drawing.Point(378, 87);
+            this.addressSearchLabel.Location = new System.Drawing.Point(347, 87);
             this.addressSearchLabel.Name = "addressSearchLabel";
             this.addressSearchLabel.Size = new System.Drawing.Size(45, 13);
             this.addressSearchLabel.TabIndex = 37;
@@ -84,6 +84,7 @@
             this.nameSearchLabel.Size = new System.Drawing.Size(35, 13);
             this.nameSearchLabel.TabIndex = 36;
             this.nameSearchLabel.Text = "Name";
+            this.nameSearchLabel.Click += new System.EventHandler(this.nameSearchLabel_Click);
             // 
             // phoneNumberExecuteLabel
             // 
@@ -97,7 +98,7 @@
             // addressExecuteLabel
             // 
             this.addressExecuteLabel.AutoSize = true;
-            this.addressExecuteLabel.Location = new System.Drawing.Point(378, 199);
+            this.addressExecuteLabel.Location = new System.Drawing.Point(347, 199);
             this.addressExecuteLabel.Name = "addressExecuteLabel";
             this.addressExecuteLabel.Size = new System.Drawing.Size(45, 13);
             this.addressExecuteLabel.TabIndex = 34;
@@ -137,7 +138,7 @@
             // 
             // addressExecuteTextBox
             // 
-            this.addressExecuteTextBox.Location = new System.Drawing.Point(381, 215);
+            this.addressExecuteTextBox.Location = new System.Drawing.Point(350, 215);
             this.addressExecuteTextBox.Name = "addressExecuteTextBox";
             this.addressExecuteTextBox.Size = new System.Drawing.Size(90, 20);
             this.addressExecuteTextBox.TabIndex = 29;
@@ -167,7 +168,7 @@
             // 
             // addressSearchTextBox
             // 
-            this.addressSearchTextBox.Location = new System.Drawing.Point(381, 103);
+            this.addressSearchTextBox.Location = new System.Drawing.Point(350, 103);
             this.addressSearchTextBox.Name = "addressSearchTextBox";
             this.addressSearchTextBox.Size = new System.Drawing.Size(90, 20);
             this.addressSearchTextBox.TabIndex = 25;
@@ -218,10 +219,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.nameSearchLabel);
             this.Controls.Add(this.listBox);
             this.Controls.Add(this.phoneNumberSearchLabel);
             this.Controls.Add(this.addressSearchLabel);
-            this.Controls.Add(this.nameSearchLabel);
             this.Controls.Add(this.phoneNumberExecuteLabel);
             this.Controls.Add(this.addressExecuteLabel);
             this.Controls.Add(this.nameExecuteLabel);

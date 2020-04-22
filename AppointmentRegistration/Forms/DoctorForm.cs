@@ -119,7 +119,7 @@ namespace AppointmentRegistration.Forms
             {
                 if (emptyBoxes())
                 {
-                    resultsTextBox.Text = "Failed to add Patient, please enter all fields";
+                    resultsTextBox.Text = "Failed to add Doctor, please enter all fields";
                 }
                 else
                 {
@@ -175,7 +175,7 @@ namespace AppointmentRegistration.Forms
                     AppointmentDatabaseEntities.Doctors.Remove(selectedDoctor);
                     AppointmentDatabaseEntities.SaveChanges();
                     populate();
-                    resultsTextBox.Text = "Patient Deleted";
+                    resultsTextBox.Text = "Doctor Deleted";
                 }
             }
 

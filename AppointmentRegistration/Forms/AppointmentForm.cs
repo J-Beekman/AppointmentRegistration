@@ -16,5 +16,10 @@ namespace AppointmentRegistration.Forms
         {
             InitializeComponent();
         }
+
+        private void nameSearchLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
