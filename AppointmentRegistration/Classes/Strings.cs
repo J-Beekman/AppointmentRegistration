@@ -17,17 +17,29 @@ namespace AppointmentRegistration
 
     public partial class Doctor
     {
-
+        public string resultsString => $"{id} {name} {phoneNumber}";
+        public override string ToString()
+        {
+            return resultsString;
+        }
     }
 
     public partial class Nurse
     {
-
+        public string resultsString => $"{id} {name} {phoneNumber}";
+        public override string ToString()
+        {
+            return resultsString;
+        }
     }
 
     public partial class Appointment
     {
-
+        public string resultsString => $"{id} {time} {roomNumber} {date}";
+        public override string ToString()
+        {
+            return resultsString;
+        }
     }
 
     public partial class Schedule
